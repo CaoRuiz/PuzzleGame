@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    tools:context="com.puzzlegame.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_puzzle_main_spiner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/puzzle_main_type"
+            android:textColor="@color/main_text"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/puzzle_main_type_selected"
+            android:textColor="@color/main_text"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/gv_xpizzle_main_pic_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="0dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/ll_puzzle_main_spiner"
+        android:layout_margin="@dimen/padding"
+        android:gravity="center_horizontal"
+        android:horizontalSpacing="@dimen/padding"
+        android:numColumns="4"
+        android:padding="@dimen/padding"
+        android:verticalSpacing="@dimen/padding"
+        android:background="@drawable/test2"/>
+
+
+</android.support.constraint.ConstraintLayout>
